@@ -5,6 +5,7 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import LineChart from "./pages/PollutionChart";
 import { Contact } from "./pages/Contact";
+import { PollutionMapHome } from "./pages/PollutionMapHome";
 // import { PollutionMapTEST } from "./components/PollutionMapTEST";
 // import { TestMap } from "./components/MapTest";
 // import { PollutionMapTest } from "./components/PollutionMapTest";
@@ -19,6 +20,10 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+      },
+      {
+        path: "/pollutionmaphome",
+        element: <PollutionMapHome></PollutionMapHome>,
       },
       {
         path: "/about",
