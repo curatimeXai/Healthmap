@@ -36,7 +36,7 @@ a:hover {
 }
 
 /* -----------------------  HEADER  -----------------------  */
-
+/*
 header {
   display: flex;
   justify-content: space-between;
@@ -76,7 +76,7 @@ ul {
   gap: 20px;
   margin-right: 10px;
 }
-
+*/
 /* -----------------------  HEADINGS  -----------------------  */
 
 h1 {
