@@ -11,7 +11,7 @@ const MenuContainer = styled.div`
   flex-direction: column;
   align-items: flex-end;
   position: relative;
-  z-index: 1000;
+  z-index: 9900;
 `;
 
 const HamburgerButton = styled.div`
@@ -22,7 +22,7 @@ const HamburgerButton = styled.div`
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-  z-index: 100;
+  z-index: 9999;
 
   .line {
     width: 100%;
@@ -65,7 +65,7 @@ const MenuList = styled.ul<{ isOpen: boolean }>`
   border-radius: 10px;
   transform: ${({ isOpen }) => (isOpen ? 'translateX(0)' : 'translateX(100%)')};
   transition: transform 0.3s ease;
-  z-index: 99;
+  z-index: 9900;
   overflow-y: auto;
   max-height: 90vh;
 

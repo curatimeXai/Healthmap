@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+
 import { Layout } from "./pages/Layout";
 import { NotFound } from "./pages/NotFound";
 import { Home } from "./pages/Home";
@@ -7,12 +7,13 @@ import LineChart from "./pages/PollutionChart";
 import { Contact } from "./pages/Contact";
 import { PollutionMapHome } from "./pages/PollutionMapHome";
 import { Faq } from "./pages/Faq";
+import { createHashRouter } from "react-router-dom";
 // import { PollutionMapTEST } from "./components/PollutionMapTEST";
 // import { TestMap } from "./components/MapTest";
 // import { PollutionMapTest } from "./components/PollutionMapTest";
 // import { PollutionTEST } from "./pages/PollutionTEST";
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: "/",
     element: <Layout></Layout>,
