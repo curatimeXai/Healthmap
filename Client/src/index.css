@@ -115,7 +115,7 @@ p {
 }
 
 /* -----------------------  BUTTONS  -----------------------  */
-
+/*
 header button {
   border-radius: 20px;
   border: 1px solid transparent;
@@ -181,7 +181,7 @@ button:focus-visible {
 .filter-value-button:hover {
   box-shadow: rgb(205, 205, 205) 1px 0 10px;
 }
-
+*/
 /* -----------------------  IMAGES  -----------------------  */
 
 .image-container {

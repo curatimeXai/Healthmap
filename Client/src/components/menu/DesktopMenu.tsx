@@ -3,6 +3,7 @@ import { BLACK, BREAKPOINT_DESKTOP, DARK_RED, GREY, WHITE } from "../styled/Vari
 import { NavLink } from "react-router-dom";
 import { MenuLinks } from "./MenuLinks";
 import arrowIcon from "/images/arrow.png";
+import { Button } from "../styled/Buttons";
 
 export const NavigationContainer = styled.section`
   display: flex;
@@ -138,7 +139,7 @@ export const DesktopMenu = () => {
     <DesktopNav>
       <ul>
         {MenuLinks.map((link) => (
-          <li key={link.path}> 
+          <li key={link.path}>
             <NavLink to={link.path}>
               {link.label}
               {link.subLinks && <img src={arrowIcon} alt="arrow icon" className="icon" />}
@@ -167,7 +168,13 @@ export const DesktopMenu = () => {
             )}
           </li>
         ))}
+        <li>
+          <NavLink to="/contact">
+            <Button>Contact Us</Button>
+          </NavLink>
+        </li>
       </ul>
     </DesktopNav>
   );
 };
+

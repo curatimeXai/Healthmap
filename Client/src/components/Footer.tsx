@@ -60,7 +60,7 @@ export const Footer = () => {
     <FooterContainer>
       <InnerFooter>
         Johannes Gutenberg University, Germany &nbsp; | &nbsp; &nbsp;
-        <NavLink to="/contactus" onClick={handleLinkClick}>Contact Us</NavLink>
+        <NavLink to="/contact" onClick={handleLinkClick}>Contact Us</NavLink>
       </InnerFooter>
     </FooterContainer>
   );

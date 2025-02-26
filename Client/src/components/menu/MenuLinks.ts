@@ -18,6 +18,10 @@ export const MenuLinks: MenuLinks[] = [
   {  
     path: "/pollutionmaphome", 
     label: "Pollution map",
+    subLinks: [
+      { path: "/about", label: "About" },
+      { path: "/chart", label: "Chart" },
+    ],
   },
   {  
     path: "https://worldheartmap.nightingale.uni-mainz.de", 
