@@ -18,11 +18,13 @@ export const H1WhiteTitle = styled.h1 `
 
 export const H1BlackTitle = styled(H1WhiteTitle) `
   color: ${BLACK};
+  
 `;
 
 export const H1BlackTitleCenter = styled(H1WhiteTitle) `
   color: ${BLACK};
   text-align: center;
+  font-size: 2.5rem;
 `;
 
 export const H1RedTitle = styled(H1WhiteTitle)`
