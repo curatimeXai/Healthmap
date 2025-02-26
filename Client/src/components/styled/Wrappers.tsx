@@ -97,7 +97,7 @@ gap: 25px;
 `;
 
 export const HomeWrapper = styled.section`
-  width: 80%;
+  width: 90%;
   max-width: 1150px;
   display: flex;
   flex-direction: column; 

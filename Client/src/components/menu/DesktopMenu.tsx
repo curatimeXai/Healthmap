@@ -103,25 +103,29 @@ export const DesktopNav = styled.nav`
       margin: 0;
       border-radius: 5px;
       background-image: linear-gradient(360deg, #FFFFFF 0%, #DDD8D0 78%, #CDC6BA 94.5%, #B9B4A8 100%);
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      align-items: center;
+      text-align: center;
       //grid-template-rows: repeat(2, auto);
-      gap: 30px;
+      gap: 20px;
       padding-top: 10px;
       padding-bottom: 15px;
     }
 
     ul.submenu li {
-      display: grid;
-      text-align: left;
+      display: block;
+      text-align: center;
       z-index: 9999;
     }
 
     ul.submenu li a {
       color: ${BLACK};
+      display: block;
       font-weight: 600;
       font-size: 1.2rem;
-      padding: 5px;
-      justify-content: left;
+      padding: 2px;
+      text-align: center;
     }
 
     ul.submenu li a:hover {
