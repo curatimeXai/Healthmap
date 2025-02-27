@@ -9,7 +9,7 @@ export const Home = () => {
     <H1BlackTitleCenter>Welcome to Health map!</H1BlackTitleCenter>
     <HomeWrapper>
       <H2NewsTitleCenter></H2NewsTitleCenter>
-      <BlockWrapper reverse> 
+      <BlockWrapper $reverse={true}> 
         <TextBoxSmallTransparent>Heart disease knows no borders. It is a leading cause of death worldwide, impacting millions of lives across continents, countries, and communities. Understanding the risk factors and prevalence of heart disease around the globe is crucial to addressing this silent epidemic.</TextBoxSmallTransparent>
         <ImageContainer>
           <HeartImage src="/images/heart_atlas.webp" alt="heart on a map"/>

@@ -124,7 +124,7 @@ export const HomeWrapper = styled.section`
 `;
 
 interface BlockWrapperProps {
-  reverse?: boolean;
+  $reverse?: boolean;
 }
 export const BlockWrapper = styled.div<BlockWrapperProps>`
   display: flex;
@@ -143,15 +143,15 @@ export const BlockWrapper = styled.div<BlockWrapperProps>`
   }
   
   @media screen and (min-width: ${BREAKPOINT_TABLET}) {
-    flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')}; // 
+    flex-direction: ${({ $reverse }) => ($reverse ? 'row-reverse' : 'row')}; // 
     justify-content: space-between;
     gap: 20px; 
 
     .image {
-      order: ${({ reverse }) => (reverse ? 2 : 1)};
+      order: ${({ $reverse }) => ($reverse ? 2 : 1)};
     }
     .text {
-      order: ${({ reverse }) => (reverse ? 1 : 2)};
+      order: ${({ $reverse }) => ($reverse ? 1 : 2)};
     }
   }
 `;
