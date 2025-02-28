@@ -227,6 +227,7 @@ button:focus-visible {
   text-align: center;
   margin: 0;
   padding: 0;
+  z-index: 1;
 }
 
 .map-wrapper {
@@ -370,7 +371,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 800;
+  z-index: 999;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
