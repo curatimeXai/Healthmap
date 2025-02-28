@@ -39,7 +39,7 @@ color: ${DARK_RED};
 export const H2WhiteTitle = styled.h2`
   padding: 0;
   color: ${WHITE};
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin: 8px 0;
 
   @media screen and (min-width: ${BREAKPOINT_TABLET}) {
@@ -47,12 +47,13 @@ export const H2WhiteTitle = styled.h2`
   }
 
   @media screen and (min-width: ${BREAKPOINT_DESKTOP}) {
-    font-size: 2rem;
+    font-size: 1.8;
   }
 `;
 
 export const H2NewsTitle = styled(H2WhiteTitle)` // used in Faq
   color: ${DARK_RED};
+  text-align: left;
 `;
 
 export const H2NewsTitleCenter = styled(H2WhiteTitle)` // used in Faq

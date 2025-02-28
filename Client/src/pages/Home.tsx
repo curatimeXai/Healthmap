@@ -6,7 +6,7 @@ import { BlockWrapper, HomeWrapper, TextBoxLongTransparent, TextBoxSmallTranspar
 export const Home = () => {
 
   return ( <>
-    <H1BlackTitleCenter>Welcome to Health map!</H1BlackTitleCenter>
+    <H1BlackTitleCenter>Welcome to Healthmap!</H1BlackTitleCenter>
     <HomeWrapper>
       <H2NewsTitleCenter></H2NewsTitleCenter>
       <BlockWrapper $reverse={true}> 

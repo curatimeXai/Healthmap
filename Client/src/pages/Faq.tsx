@@ -8,31 +8,39 @@ return(
 <H1RedTitle>FAQ</H1RedTitle>
 <WhiteWrapper>
   <TextBoxLongTransparent>
-    <H2NewsTitle>Question</H2NewsTitle> 
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, recusandae commodi cum eligendi repellat distinctio cumque nesciunt qui, illo laborum similique, velit unde suscipit id at fugiat facere tenetur eaque!
+    <H2NewsTitle>What types of data can I explore on Healthmaps interactive maps?</H2NewsTitle> 
+    Prevalence of heart disease, as well as key risk factors and more.
   </TextBoxLongTransparent>
 </WhiteWrapper>
 
 <WhiteWrapper>
   <TextBoxLongTransparent>
-    <H2NewsTitle>Question</H2NewsTitle> 
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsam, quod adipisci cumque accusamus doloribus nulla blanditiis numquam cupiditate assumenda alias quisquam nam aspernatur deleniti dignissimos et similique inventore quae?
+    <H2NewsTitle>How can I stay updated with new insights from Healthmap?</H2NewsTitle> 
+    You can follow us on social media, or check our platform regularly for the latest updates and reports.
   </TextBoxLongTransparent>
 </WhiteWrapper>
 
 <WhiteWrapper>
   <TextBoxLongTransparent>
-    <H2NewsTitle>Question</H2NewsTitle> 
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vel neque impedit soluta sapiente minus? Fugit neque nemo omnis quam. Assumenda fuga culpa mollitia optio velit nesciunt voluptatibus fugiat voluptatum?
+    <H2NewsTitle>What are the common risk factors for cardiovascular diseases?</H2NewsTitle> 
+    Common risk factors for cardiovascular diseases include high blood pressure, high cholesterol, smoking, diabetes, physical inactivity, poor diet, family history, excessive alcohol consumption, and stress. Healthy lifestyle choices like regular exercise, a balanced diet, quitting smoking, and managing stress can help reduce these risks.
     </TextBoxLongTransparent>
 </WhiteWrapper>
 
 <WhiteWrapper>
   <TextBoxLongTransparent>
-    <H2NewsTitle>Question</H2NewsTitle> 
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni vel laudantium maiores dolores dolor porro blanditiis sit exercitationem, aspernatur explicabo, praesentium velit at necessitatibus deserunt nesciunt aliquam, quod dolore? Soluta.
+    <H2NewsTitle>Where can I find information about pollution in my area?</H2NewsTitle> 
+    Click on "Pollution Map" at the top of the screen to go to the Pollution Map to see information about pollution levels all over the world.
+    </TextBoxLongTransparent>
+</WhiteWrapper>
+
+<WhiteWrapper>
+  <TextBoxLongTransparent>
+    <H2NewsTitle>How frequently is the data updated?</H2NewsTitle> 
+    We strive to update our data regularly, incorporating the latest research and health reports to ensure accuracy and relevance.
   </TextBoxLongTransparent>
 </WhiteWrapper>
+
 
 </>)
 

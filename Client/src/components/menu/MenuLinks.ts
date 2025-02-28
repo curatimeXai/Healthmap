@@ -19,6 +19,7 @@ export const MenuLinks: MenuLinks[] = [
     path: "/pollutionmaphome", 
     label: "Pollution map",
     subLinks: [
+      { path: "/pollutionmaphome", label: "Pollution map" },
       { path: "/about", label: "About" },
       { path: "/chart", label: "Chart" },
     ],

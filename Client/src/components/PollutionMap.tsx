@@ -13,6 +13,7 @@ import {
   fetchLatestAverageValue,
 } from "../service/fetchData";
 import { MdLocationPin } from "react-icons/md";
+import { H1BlackTitleCenter } from "./styled/Title";
 
 export const PollutionMap = () => {
   const mapRef = useRef<L.Map | null>(null);
@@ -223,8 +224,8 @@ export const PollutionMap = () => {
     <>
       <div className="box-container">
         <div className="map-container">
-          <h2>POLLUTION MAP</h2>
           <div className="filter-container">
+          <H1BlackTitleCenter>Pollution map</H1BlackTitleCenter>
             <div className="search-container">
               <input
                 type="text"

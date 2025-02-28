@@ -19,8 +19,8 @@ export const DesktopNav = styled.nav`
 
   @media screen and (min-width: ${BREAKPOINT_DESKTOP}) {
     display: block;
-    width: 70%;
-    padding-left: 20px;
+    width: 100%;
+    padding-left: 100px;
     padding-right: 0;
     margin-right: 0;
 
@@ -103,7 +103,7 @@ export const DesktopNav = styled.nav`
       margin: 0;
       border-radius: 5px;
       background-image: linear-gradient(360deg, #FFFFFF 0%, #DDD8D0 78%, #CDC6BA 94.5%, #B9B4A8 100%);
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       justify-items: center;
       align-items: center;
       text-align: center;
@@ -142,36 +142,31 @@ export const DesktopMenu = () => {
   return (
     <DesktopNav>
       <ul>
-        {MenuLinks.map((link) => (
-          <li key={link.path}>
+            {MenuLinks.map((link) => (
+        <li key={link.path}>
+          {link.target ? (
+            <a href={link.path} target={link.target} rel="noopener noreferrer">
+              {link.label}
+            </a>
+          ) : (
             <NavLink to={link.path}>
               {link.label}
               {link.subLinks && <img src={arrowIcon} alt="arrow icon" className="icon" />}
             </NavLink>
+          )}
 
-            {link.subLinks && (
-              <ul className="submenu">
-                {link.subLinks.map((subLink) => (
-                  <li key={subLink.path}>
-                    {subLink.target ? (
-                      <a
-                        href={subLink.path}
-                        target={subLink.target}
-                        rel="noopener noreferrer"
-                      >
-                        {subLink.label}
-                      </a>
-                    ) : (
-                      <NavLink to={subLink.path}>
-                        {subLink.label}
-                      </NavLink>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            )}
-          </li>
-        ))}
+          {link.subLinks && (
+            <ul className="submenu">
+              {link.subLinks.map((subLink) => (
+                <li key={subLink.path}>
+                  <NavLink to={subLink.path}>{subLink.label}</NavLink>
+                </li>
+              ))}
+            </ul>
+          )}
+        </li>
+      ))}
+
         <li>
           <NavLink to="/contact">
             <Button>Contact Us</Button>

@@ -11,7 +11,7 @@ const MenuContainer = styled.div`
   flex-direction: column;
   align-items: flex-end;
   position: relative;
-  z-index: 9900;
+  z-index: 999;
 `;
 
 const HamburgerButton = styled.div`
@@ -168,6 +168,10 @@ export const HamburgerMenu = () => {
                 {link.label}
                 <ArrowIcon isOpen={openSubMenu === link.path} />
               </span>
+            ) : link.target ? (
+              <a href={link.path} target={link.target} rel="noopener noreferrer" onClick={closeMenu}>
+                {link.label}
+              </a>
             ) : (
               <NavLink to={link.path} onClick={closeMenu}>
                 {link.label}
@@ -178,14 +182,15 @@ export const HamburgerMenu = () => {
               <ul className={`submenu ${openSubMenu === link.path ? 'open' : ''}`}>
                 {link.subLinks.map((subLink) => (
                   <li key={subLink.path}>
-                    <NavLink
-                      to={subLink.path}
-                      onClick={closeMenu}
-                      target={subLink.target ? subLink.target : '_self'}
-                      rel="noopener noreferrer"
-                    >
-                      {subLink.label}
-                    </NavLink>
+                    {subLink.target ? (
+                      <a href={subLink.path} target={subLink.target} rel="noopener noreferrer" onClick={closeMenu}>
+                        {subLink.label}
+                      </a>
+                    ) : (
+                      <NavLink to={subLink.path} onClick={closeMenu}>
+                        {subLink.label}
+                      </NavLink>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -193,11 +198,12 @@ export const HamburgerMenu = () => {
           </li>
         ))}
         <ButtonWrapper>
-        <NavLink to="/contactus" onClick={closeMenu}>
-          <Button>Contact Us</Button>
-        </NavLink>
+          <NavLink to="/contactus" onClick={closeMenu}>
+            <Button>Contact Us</Button>
+          </NavLink>
         </ButtonWrapper>
       </MenuList>
+
     </MenuContainer>
   );
 };
